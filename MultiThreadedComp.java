@@ -51,6 +51,7 @@ public class MultiThreadedComp {
             threads[i].start();
             startRow = endRow;
             endRow += rowsPerThread;
+            Thread.sleep(5000)
         }
 
         // Wait for threads to finish
